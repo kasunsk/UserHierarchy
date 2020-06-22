@@ -15,12 +15,12 @@ public class UserAccessAccessServiceImpl implements UserAccessService {
     private UserAccessRepository userAccessRepository;
 
     @Override
-    public Boolean insertUserAccess(UserAccess userAccess) {
-        return null;
+    public void insertUserAccess(UserAccess userAccess) {
+        userAccessRepository.save(userAccess);
     }
 
     @Override
-    public Boolean insertAllUsersAccess(List<UserAccess> allUserAccess) {
-        return null;
+    public void insertAllUsersAccess(List<UserAccess> allUserAccess) {
+        userAccessRepository.saveAll(allUserAccess);
     }
 }

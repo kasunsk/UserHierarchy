@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface UserAccessService {
 
-    Boolean insertUserAccess(UserAccess userAccess);
+    void insertUserAccess(UserAccess userAccess);
 
-    Boolean insertAllUsersAccess(List<UserAccess> allUserAccess);
+    void insertAllUsersAccess(List<UserAccess> allUserAccess);
 
 }
